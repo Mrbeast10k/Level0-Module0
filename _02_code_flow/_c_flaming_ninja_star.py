@@ -21,45 +21,70 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    my_turtle = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    my_turtle.shape('turtle')
     # Set the turtle width to 2
-    
+    my_turtle.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    my_turtle.speed(100000000000)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
         
         # Set the turtle .fillcolor() to orange
-        
+    my_turtle.fillcolor('orange')
         # Call the turtle .begin_fill() function
-        
+    my_turtle.begin_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+    #my_turtle.circle(20, 360)
+
         # DRAW           Move the turtle 64 pixels
-        
+    my_turtle.forward(150)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+    my_turtle.left(64)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+    my_turtle.forward(150)
         #                Turn the turtle to the right 170 degrees
-         
+    my_turtle.right(170)
         #                Move the turtle the distance in the variable flameSize (again)
-         
+    my_turtle.forward(150)
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+    my_turtle.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+    my_turtle.forward(50)
         # Call the turtle .end_fill() method
-        
+    #my_turtle.end_fill()
     # Hide your turtle so you can see the pattern.
-        
+    my_turtle.hideturtle()
     # TEST   Run the program. Check that your shape is the same as the first
     #        picture in the recipe. This is one arm of the ninja star.
+    for i in range(25):
+        # Set the turtle .fillcolor() to orange
+        my_turtle.fillcolor('orange')
+        my_turtle.begin_fill()
 
+         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
+         #                numbers will turn the turtle counter-clockwise.)
+        my_turtle.left(40)
+         # DRAW FLAME     Move the turtle the distance in the variable flameSize
+        my_turtle.forward(flameSize)
+         #                Turn the turtle to the right 170 degrees
+        my_turtle.right(170)
+         #                Move the turtle the distance in the variable flameSize (again)
+        my_turtle.forward(flameSize)
+         #  TURN RIGHT    Turn the turtle 62 degrees to the right
+        my_turtle.right(62)
+         #  DRAW          Move the turtle the distance in the variable baseSize
+        my_turtle.forward(baseSize)
+         # Call the turtle .end_fill() method
+        my_turtle.end_fill()
+         # Hide your turtle so you can see the pattern.
+        my_turtle.hideturtle()
+
+        # Set the turtle .fillcolor() to orange
+        #my_turtle.end_fill()
     # COLOR  Change the turtle's pen color so that the flame is a different
     #        color to the rest of the star. Run the program again. Check the
     #        second picture in the recipe.

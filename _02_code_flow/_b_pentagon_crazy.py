@@ -15,7 +15,7 @@ def get_next_color(i):
 
 if __name__ == '__main__':
     window = turtle.Screen()
-    window.bgcolor('black')
+    window.bgcolor('white')
     window.setup(width=0.75, height=0.9, startx=0, starty=0)
     
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # Make the turtle shape 'turtle', .shape('turtle')
     my_turtle.shape('turtle')
     # Set the turtle speed to max (0)
-    my_turtle.speed(100)
+    my_turtle.speed(1000000000000)
     # Set the turtle width to 1
     my_turtle.width(1)
     # Create a variable to hold the number of sides in a pentagon
@@ -43,9 +43,17 @@ if __name__ == '__main__':
             my_turtle.width(3)
         # Use the get_next_color function to set the turtle pencolor,
         # *hint .pencolor(get_next_color(i))
-        my_turtle.pencolor(x)
+        my_turtle.pencolor(get_next_color(x))
         # Move the turtle forward by the loop variable, *hint .forward(i)
-        
+        my_turtle.forward(x)
+        my_turtle.circle(100)
+        my_turtle.right(90)
+        my_turtle.left(90)
+        my_turtle.circle(100)
+
+
+
+
         # Turn the turtle to the right by the angle variable + 1
 
     # Hide your turtle so you can see the pattern.
