@@ -18,7 +18,7 @@ if __name__ == '__main__':
     window.bgcolor('white')
     window.setup(width=0.75, height=0.9, startx=0, starty=0)
     
-    colors = ('red', 'blue', 'green', 'yellow', 'orange')
+    colors = ('black', 'white', 'black', 'white', 'green')
     
     # Make a new turtle
     my_turtle=turtle.Turtle()
@@ -46,14 +46,10 @@ if __name__ == '__main__':
         my_turtle.pencolor(get_next_color(x))
         # Move the turtle forward by the loop variable, *hint .forward(i)
         my_turtle.forward(x)
-        my_turtle.circle(100)
-        my_turtle.right(90)
-        my_turtle.left(90)
-        my_turtle.circle(100)
+        my_turtle.right(60)
+        my_turtle.right(10)
 
-
-
-
+        my_turtle.left(9)
         # Turn the turtle to the right by the angle variable + 1
 
     # Hide your turtle so you can see the pattern.

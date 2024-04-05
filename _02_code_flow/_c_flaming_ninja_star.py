@@ -40,16 +40,16 @@ if __name__ == '__main__':
     #my_turtle.circle(20, 360)
 
         # DRAW           Move the turtle 64 pixels
-    my_turtle.forward(150)
+
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-    my_turtle.left(64)
+
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-    my_turtle.forward(150)
+
         #                Turn the turtle to the right 170 degrees
-    my_turtle.right(170)
+
         #                Move the turtle the distance in the variable flameSize (again)
-    my_turtle.forward(150)
+
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
     my_turtle.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
